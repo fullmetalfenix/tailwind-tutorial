@@ -1,11 +1,18 @@
 module.exports = {
-  purge: [
-    './**/*.{js,jsx,ts,tsx}',
-    './index.html'
-  ],
+  purge: {
+    enabled: true,
+    content: ["./**/*.jsx", "./index.html"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        brand:{
+          light:'#546E7A',
+          DEFAULT:'#263238',
+        }
+      }
+    },
   },
   variants: {
     extend: {
